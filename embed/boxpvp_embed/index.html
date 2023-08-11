@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<title>vampyre</title>
+	<meta content="#43B581" data-react-helmet="true" name="theme-color" />
+	<meta content="BoxPVP" property="og:title" />
+	<meta content="cool owner guy" property="og:description" />
+	<meta content="https://vampyre.pages.dev/" property="og:url" />
+	<meta content="https://vampyre.pages.dev/embed/boxpvp_embed/img.png" property="og:image" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:image" content="https://vampyre.pages.dev/embed/boxpvp_embed/img.png" />
+  </head>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f0f0f0;
+    }
+    #countdown {
+      font-size: 24px;
+    }
+  </style>
+  </head>
+  <body>
+    <div id="countdown">Redirecting you in 3 seconds</div>
+  
+    <script>
+      var countdown = 3;
+      var countdownElement = document.getElementById("countdown");
+  
+      function updateCountdown() {
+        countdownElement.innerText = "Redirecting you in " + countdown + " seconds";
+        countdown--;
+  
+        if (countdown < 0) {
+          window.location.href = "https://www.google.com";
+        } else {
+          setTimeout(updateCountdown, 1000);
+        }
+      }
+  
+      updateCountdown();
+    </script>
+  </body>
+  </html>
